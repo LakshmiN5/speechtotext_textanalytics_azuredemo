@@ -24,11 +24,6 @@ def get_keywords(input_text):
                 }
             ]
             }
-    try:
-        response = requests.post(constructed_url, headers=headers, json=body)
-    try:
-        pass
-    except expression as identifier:
-        pass
+    response = requests.post(constructed_url, headers=headers, json=body)
     print(response)
     return response.json()
